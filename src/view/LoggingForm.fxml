@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="context" prefHeight="600.0" prefWidth="1100.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoggingFormController">
+   <children>
+      <AnchorPane layoutX="595.0" layoutY="69.0" prefHeight="481.0" prefWidth="411.0" style="-fx-background-color: #adffd9; -fx-background-radius: 15;">
+         <effect>
+            <DropShadow height="35.83" radius="18.155" spread="0.1" width="38.79" />
+         </effect>
+         <children>
+            <JFXTextField fx:id="txtUserName" focusColor="#62eb62" layoutX="61.0" layoutY="133.0" onAction="#goToPassword" prefHeight="42.0" prefWidth="293.0" promptText="  Username" style="-fx-prompt-text-fill: #bdc7c2; -fx-background-color: white; -fx-background-radius: 7;" unFocusColor="#4d4d4d00">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField fx:id="txtPassword" focusColor="#62eb62" layoutX="61.0" layoutY="204.0" onAction="#goToLoginPage" prefHeight="42.0" prefWidth="293.0" promptText="  Password" style="-fx-prompt-text-fill: #bdc7c2; -fx-background-color: white; -fx-background-radius: 7;" unFocusColor="#4d4d4d00">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXTextField fx:id="txtPasswordShow" focusColor="#62eb62" layoutX="61.0" layoutY="204.0" onAction="#goToLoginPage" prefHeight="42.0" prefWidth="293.0" promptText="  Password" style="-fx-prompt-text-fill: #bdc7c2; -fx-background-color: white; -fx-background-radius: 7;" unFocusColor="#4d4d4d00" visible="false">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font></JFXTextField>
+            <JFXButton buttonType="RAISED" layoutX="57.0" layoutY="303.0" onAction="#goToLoginPage" prefHeight="36.0" prefWidth="293.0" style="-fx-background-color: #30cf98; -fx-background-radius: 360;" text="Log in" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="57.0" layoutY="394.0" onAction="#goToCanclePage" prefHeight="42.0" prefWidth="293.0" style="-fx-background-color: #30cf98; -fx-background-radius: 360;" text="Cancel" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Text layoutX="73.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WELCOME BACK">
+               <font>
+                  <Font name="Ink Free" size="36.0" />
+               </font>
+            </Text>
+            <Label fx:id="lblError" alignment="CENTER" contentDisplay="CENTER" layoutX="61.0" layoutY="267.0" prefHeight="25.0" prefWidth="321.0" text="Username or Password is wrong !" textAlignment="CENTER" textFill="#f82121" visible="false">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <effect>
+                  <DropShadow color="#ffaaaa" />
+               </effect>
+            </Label>
+            <Separator layoutX="82.0" layoutY="367.0" prefHeight="3.0" prefWidth="244.0" />
+            <FontAwesomeIconView fx:id="warningIcon" fill="#e10909" glyphName="WARNING" layoutX="82.0" layoutY="287.0" size="20" visible="false" />
+            <FontAwesomeIconView glyphName="EYE" layoutX="319.0" layoutY="235.0" size="30" />
+            <JFXButton layoutX="319.0" layoutY="212.0" onMouseEntered="#passwordShowOnAction" onMouseExited="#passwordHideOnAction" prefHeight="25.0" prefWidth="30.0" style="-fx-background-radius: 360;" text="  " />
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="500.0" fitWidth="549.0" layoutX="14.0" layoutY="97.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assert/login.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="87.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hostel                          System">
+         <font>
+            <Font name="Gabriola" size="43.0" />
+         </font>
+      </Text>
+      <Text fill="#077240" layoutX="181.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Management">
+         <font>
+            <Font name="Gabriola" size="43.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

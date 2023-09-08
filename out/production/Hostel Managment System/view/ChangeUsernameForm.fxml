@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="paneUsername" prefHeight="500.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ChangeUsernameFormController">
+   <children>
+      <JFXTextField fx:id="txtOldUsername" labelFloat="true" layoutX="39.0" layoutY="93.0" onAction="#goToNewUsername" prefHeight="31.0" prefWidth="490.0" promptText="Current Username :">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtNewUsername" labelFloat="true" layoutX="39.0" layoutY="156.0" onAction="#goToPassword" prefHeight="31.0" prefWidth="490.0" promptText="New Username :">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <Text layoutX="14.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Change Username">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <Label fx:id="lblError" alignment="CENTER" contentDisplay="RIGHT" layoutX="44.0" layoutY="306.0" prefHeight="25.0" prefWidth="566.0" textAlignment="CENTER" textFill="#f82121">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnChangeUsername" buttonType="RAISED" layoutX="327.0" layoutY="360.0" onAction="#changeUsernameOnAction" prefHeight="39.0" prefWidth="182.0" style="-fx-background-color: #ae0000; -fx-cursor: hand; -fx-background-radius: 10;" text="Change Username" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXPasswordField fx:id="txtPassword" labelFloat="true" layoutX="39.0" layoutY="219.0" onAction="#changeUsernameOnAction" prefHeight="31.0" prefWidth="490.0" promptText="Password :">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXPasswordField>
+   </children>
+</AnchorPane>

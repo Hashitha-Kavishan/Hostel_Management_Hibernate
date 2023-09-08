@@ -1,0 +1,19 @@
+.combo{
+    -fx-font-size: 15;
+    -fx-font-weight: bold;
+    -fx-font-fill: rgb(54, 49, 49);
+}
+
+.table-row-cell:selected{
+    -fx-background-color:linear-gradient(from 0% 0% to 100% 100%, white 0%, #007bff 50%, white 100%);
+}
+
+.table-row-cell:selected .table-cell{
+    -fx-text-fill: black !important;
+}
+
+.date-picker{
+    -fx-font-size: 15;
+    -fx-font-weight: bold;
+    -fx-font-fill: rgb(54, 49, 49);
+}

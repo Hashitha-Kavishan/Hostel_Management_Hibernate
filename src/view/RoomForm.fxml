@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1100.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RoomFormController">
+   <children>
+      <Label layoutX="12.0" prefHeight="52.0" prefWidth="543.0" text="Manage Rooms" textOverrun="CLIP">
+         <font>
+            <Font name="Arial Bold" size="23.0" />
+         </font>
+         <effect>
+            <ColorAdjust brightness="-1.0" contrast="-1.0" />
+         </effect>
+      </Label>
+      <TableView fx:id="tblRoom" layoutX="12.0" layoutY="251.0" prefHeight="342.0" prefWidth="1077.0" stylesheets="@../styles/place_order.css">
+         <columns>
+            <TableColumn fx:id="colRoomId" prefWidth="196.3333282470703" text="Room ID" />
+            <TableColumn fx:id="colRoomType" prefWidth="393.0" text="Room Type " />
+            <TableColumn fx:id="colMonthlyRent" prefWidth="336.0" text="Monthly Rental (LKR)" />
+            <TableColumn fx:id="colQty" prefWidth="148.0" text="Qty " />
+         </columns>
+         <styleClass>
+            <String fx:value="table-cell" />
+            <String fx:value="table-row-cell" />
+         </styleClass>
+      </TableView>
+      <JFXTextField fx:id="txtRoomId" labelFloat="true" layoutX="53.0" layoutY="76.0" onKeyReleased="#textFields_Key_Released" onMouseClicked="#setTextOnMouseClick" prefHeight="31.0" prefWidth="343.0" promptText="Room ID :">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton id="btnSave" fx:id="btnSave" layoutX="724.0" layoutY="195.0" onAction="#btnSave_OnAction" prefHeight="28.0" prefWidth="100.0" ripplerFill="#b5b4b4" style="-fx-cursor: hand; -fx-background-radius: 10; -fx-background-color: #27a700;" text="Save" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton id="btnUpdate" fx:id="btnUpdate" layoutX="851.0" layoutY="195.0" onAction="#btnUpdate_OnAction" prefHeight="28.0" prefWidth="100.0" ripplerFill="WHITE" style="-fx-cursor: hand; -fx-background-radius: 10; -fx-background-color: #27a700;" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton id="btnDelete" fx:id="btnDelete" layoutX="979.0" layoutY="195.0" onAction="#btnDelete_OnAction" prefHeight="28.0" prefWidth="100.0" ripplerFill="WHITE" style="-fx-cursor: hand; -fx-background-radius: 10; -fx-background-color: #ae0000;" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXComboBox fx:id="cmbRoomType" labelFloat="true" layoutX="53.0" layoutY="140.0" prefHeight="38.0" prefWidth="343.0" promptText="Room Type :" styleClass="combo" stylesheets="@../styles/place_order.css" />
+      <JFXTextField fx:id="txtQty" labelFloat="true" layoutX="435.0" layoutY="144.0" onKeyReleased="#textFields_Key_Released" prefHeight="31.0" prefWidth="272.0" promptText="Qty :">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtMonthlyRent" labelFloat="true" layoutX="53.0" layoutY="207.0" onKeyReleased="#textFields_Key_Released" prefHeight="31.0" prefWidth="474.0" promptText="Monthly Rental (LKR) :">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+   </children>
+</AnchorPane>

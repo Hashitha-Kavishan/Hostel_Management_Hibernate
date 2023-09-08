@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="mainRoot" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1100.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashboardFormController">
+   <children>
+      <FontAwesomeIconView fill="#000000c2" glyphName="SIGN_OUT" layoutX="-121.0" layoutY="24.0" size="20" />
+      <FontAwesomeIconView fx:id="btnRoom" glyphName="HOME" layoutX="488.0" layoutY="115.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" size="54">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></FontAwesomeIconView>
+      <FontAwesomeIconView fx:id="btnSettings" glyphName="GEAR" layoutX="757.0" layoutY="114.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" size="50">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></FontAwesomeIconView>
+      <AnchorPane fx:id="root" layoutY="200.0" prefHeight="600.0" prefWidth="1100.0" />
+      <FontAwesomeIconView fx:id="btnStudent" glyphName="USERS" layoutX="621.0" layoutY="110.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" size="43" text="">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></FontAwesomeIconView>
+      <FontAwesomeIconView fx:id="btnReserve" glyphName="CHECK_CIRCLE" layoutX="236.0" layoutY="118.0" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" size="54" text="">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></FontAwesomeIconView>
+      <FontAwesomeIconView fx:id="btnKeyMoney" glyphName="DOLLAR" layoutX="377.0" layoutY="114.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" size="53" wrappingWidth="36.285715103149414">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></FontAwesomeIconView>
+      <Text layoutX="217.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reserve Room">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Text>
+      <Text layoutX="361.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Key Money">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Text>
+      <Text layoutX="492.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rooms">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Text>
+      <Text layoutX="619.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Students">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Text>
+      <Text layoutX="733.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Profile Settings">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Text>
+      <FontAwesomeIconView fill="#bf1212" glyphName="SIGN_OUT" layoutX="1058.0" layoutY="45.0" size="30" text="" />
+      <JFXButton layoutX="1055.0" layoutY="21.0" onAction="#logoutOnAction" opacity="0.51" prefHeight="25.0" prefWidth="28.0" style="-fx-background-radius: 360;" text="  ">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

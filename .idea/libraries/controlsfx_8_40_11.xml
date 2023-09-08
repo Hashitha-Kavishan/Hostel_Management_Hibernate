@@ -1,0 +1,21 @@
+<component name="libraryTable">
+  <library name="controlsfx-8.40.11">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/libs/font_awsome/controlsfx-8.40.11.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/libs/font_awsome/fontawesomefx-octicons-4.3.0-5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/libs/font_awsome/fontawesomefx-glyphsbrowser-1.3.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/libs/font_awsome/fontawesomefx-icons525-3.0.0-4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/libs/font_awsome/fontawesomefx-commons-8.15.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/libs/font_awsome/fontawesomefx-controls-8.15.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/libs/font_awsome/fontawesomefx-materialicons-2.2.0-5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/libs/font_awsome/fontawesomefx-weathericons-2.0.10-5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/libs/font_awsome/fontawesomefx-glyphsbrowser-all-1.3.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/libs/font_awsome/fontawesomefx-emojione-2.2.7-2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/libs/font_awsome/fontawesomefx-fontawesome-4.7.0-5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/libs/font_awsome/fontawesomefx-materialdesignfont-1.7.22-4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/libs/font_awsome/fontawesomefx-8.9.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
